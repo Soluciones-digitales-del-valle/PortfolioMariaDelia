@@ -7,12 +7,12 @@
  */
 const portfolioData = {
   artista: {
-    nombre: "María Delia",
+    nombre: "María Delia Capdevila",
     disciplina: "Artista visual — mosaico y vidrio",
     ubicacion: "Argentina",
     foto: "assets/perfil.jpeg",
     fotoAlt:
-      "Retrato de María Delia sonriendo, con suéter verde y fondo de pared texturada en tonos claros.",
+      "Retrato de María Delia Capdevila sonriendo, con suéter verde y fondo de pared texturada en tonos claros.",
     /* Texto de EJEMPLO — no es biografía verificada */
     bio: "Contenido de ejemplo. Artista visual que trabaja el mosaico, el vidrio fusionado y la técnica mixta, con un interés particular por la luz, la textura y los materiales naturales. Este párrafo es un marcador de posición: reemplazalo por una presentación breve en primera o tercera persona.",
   },
