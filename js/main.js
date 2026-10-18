@@ -8,31 +8,31 @@
 const portfolioData = {
   artista: {
     nombre: "María Delia Capdevila",
-    disciplina: "Artista visual — mosaico artistico y vitrofusión",
-    ubicacion: "Argentina",
+    disciplina: "Artista visual — mosaico artístico y vitrofusión",
+    ubicacion: "Villa de Las Rosas",
     foto: "assets/perfil.jpeg",
     fotoAlt:
       "Retrato de María Delia Capdevila sonriendo, con suéter verde y fondo de pared texturada en tonos claros.",
-    bio: "Soy de Villa de las rosas, provincia de Córdoba mi arte es el mosaico artístico, la vitrofusión y la cerámica aplicada al arte decorativo",
+    bio: "Soy de Villa de Las Rosas, provincia de Córdoba mi arte es el mosaico artístico, la vitrofusión y la cerámica aplicada al arte decorativo",
   },
 
   obraDestacada: {
     titulo:
-      "Tan lejos que a mi vista escapas\nTan cerca que a mi alma reconfortas",
+      "Tan lejos que a mi vista escapas\nTan cerca que mi alma reconfortas",
     anio: 2017,
     tecnica:
-      "mosaico artistico mural en relieves de cristales y piedra natural.",
+      "Mosaico artístico mural en relieves de cristales y piedra natural.",
     dimensiones: "110cm x 90 cm",
     imagen: "assets/obra-destacada.jpeg",
     imagenAlt:
       "Mosaico en relieve de un paisaje: sol de fragmentos blancos, árboles estilizados, rocas y lecho de piedras claras.",
-    texto: `Elegí esta pieza como obra destacada porque resume para mi el dialogo mineral de la piedra natural con el brillo del cristal.
+    texto: `Elegí esta pieza como obra destacada porque resume para mí el diálogo mineral de la piedra natural con el brillo del cristal.
 
 El vidrio aporta transparencia y reflejo; la piedra, peso y memoria.
 
 La imagen elegida responde a un paisaje reconocible de mi pueblo.
 
-El paso del sol a las 9 de la mañana en el mes de abril a travez del arbol, fresno es una clara señal del transito de las almas`,
+El paso del sol a las 9 de la mañana en el mes de abril a través del árbol, fresno es una clara señal simbólica del tránsito de las almas.`,
   },
 
   /* Obras de ejemplo para la línea de tiempo. Agregá o quitá entradas libremente. */
@@ -41,16 +41,16 @@ El paso del sol a las 9 de la mañana en el mes de abril a travez del arbol, fre
       id: "obra-2026-01",
       titulo: "Escalera abundante",
       anio: 2026,
-      tecnica: "Mosaico artistico en material ceramico",
+      tecnica: "Mosaico artístico en material cerámico",
       imagen: "assets/obra-escalera-mosaico.jpeg",
       imagenAlt:
-        "Escalera exterior con contrapeldanos de mosaico colorido, barandas de madera natural y vegetación.",
+        "Escalera exterior con contrapeldaños de mosaico colorido, barandas de madera natural y vegetación.",
       descripcion:
-        "cada peldaño narra un motivo natural en trencadís. Intervención en cada peldaño de la escalera de ingreso al local de Aloe, Almacén natural, Las Tapias",
+        "Cada peldaño narra un motivo natural en trencadís. Intervención que narra historias cotidianas y propias de la flora y fauna transerrana en cada peldaño de la escalera de ingreso al local de Aloe, Almacén natural, Las Tapias.",
     },
     {
       id: "obra-2026-02",
-      titulo: "Logo Municipalidad Villa de las Rosas",
+      titulo: "Logo Municipalidad Villa de Las Rosas",
       anio: 2026,
       tecnica: "Vidrio fusionado",
       imagen: "assets/obra-rosa-vidrio.jpeg",
@@ -68,7 +68,11 @@ El paso del sol a las 9 de la mañana en el mes de abril a travez del arbol, fre
       imagenAlt:
         "Mural vertical de una planta de tabaco en vitrofusión, con flor violeta y hojas verdes sobre una pared rosada.",
       vertical: true,
-      descripcion: "Ubicada en Villa de las Rosas en el edificio municipal",
+      descripcion: `Es un vitromosaico en cuatro capas de vidrio float coloreadas con polvos de vidrio optul y formulaciones de esmaltes con agregado de escamas de vidrio dicróico.
+
+Esta obra nos cuenta acerca de un cultivo que se realizaba en la localidad enriqueciendo la economía familiar con la cosecha y venta del tabaco seco.
+
+Ubicada en Villa de Las Rosas en el edificio municipal.`,
     },
     {
       id: "obra-2025-01",
@@ -82,67 +86,96 @@ El paso del sol a las 9 de la mañana en el mes de abril a travez del arbol, fre
       detalleAlt:
         "Detalle del ala de la escultura: vidrio fusionado con inclusiones ámbar, rojas y amarillas.",
       descripcion:
-        "Halcón peregrino emblema de la cetrería, cacería con halcones. Obra expuesta en QIAF 2025.",
+        "Halcón peregrino emblema de la cetrería, cacería con halcones. Obra expuesta en Qatar, QIAF 2025.",
     },
     {
-      id: "obra-2024-03",
+      id: "obra-2022-01",
+      titulo: "Amigos",
+      anio: 2022,
+      tecnica: "Técnica mixta",
+      imagen: "assets/obra-amigos.jpg",
+      imagenAlt:
+        "Obra de técnica mixta con un pavo real: plumas naturales, azulejo azul y blanco, y crestas de vidrio sobre fondo texturado.",
+      completa: true,
+      descripcion: "",
+    },
+    {
+      id: "obra-2019-01",
+      titulo: "Alita",
+      anio: 2019,
+      tecnica: "Vitro mosaico",
+      imagen: "assets/obra-alita.jpg",
+      imagenAlt:
+        "Escultura de ala en vidrio float fusionado, con secciones azules y gotas de cristal, montada sobre base de madera con placa Capdevila.",
+      vertical: true,
+      descripcion: "Vidrio float fusionado",
+    },
+    {
+      id: "obra-2013-01",
+      titulo: "Escenario de Beatificación de Cura Brochero",
+      anio: 2013,
+      tecnica: "Instalación",
+      imagen: "assets/obra-brochero-01.jpg",
+      imagenAlt:
+        "Instalación brochereana con oveja de lana, tinajas de barro, brasero y textiles sobre un fondo de paisaje.",
+      detalle: "assets/obra-brochero-02.jpg",
+      detalleAlt:
+        "Vista de la instalación con tinajas, ladrillos, textiles y pastos secos sobre el piso.",
+      detalleLabel: "",
+      completa: true,
+      descripcion:
+        "Rincón de época brocheriano. Se utilizaron materiales de su uso personal y de su obra en Villa Cura Brochero.",
+    },
+    {
+      id: "obra-2014-01",
+      titulo: "Mi Gallito",
+      anio: 2014,
+      tecnica: "Trencadís",
+      imagen: "assets/obra-mi-gallito.jpg?v=2",
+      imagenAlt:
+        "Mosaico en trencadís de un gallo de perfil con cresta roja, cuerpo en azulejos claros y verdes, y firma Capdevila.",
+      descripcion: "Realizado en azulejo esmaltado artesanalmente.",
+    },
+    {
+      id: "obra-2017-01",
       titulo: "Mirada mineral",
-      anio: 2024,
+      anio: 2017,
       tecnica: "Técnica mixta — mosaico y pintura",
       imagen: "assets/obra-ojo.jpeg",
       imagenAlt:
         "Obra monocromática de un ojo con pupila floral brillante, iris de esquirlas y pinceladas gestuales.",
       descripcion:
-        "Ejemplo — Ojo en escala ampliada; tensión entre mosaico táctil y gesto pictórico.",
+        "Ojo en escala ampliada; tensión entre mosaico táctil y gesto pictórico.",
     },
     {
       id: "obra-2023-01",
-      titulo: "Florón cardinal",
+      titulo: "Detalle en piso",
       anio: 2023,
-      tecnica: "Mosaico de piedra y cerámica",
+      tecnica: "Mosaico en cerámico de piso",
       imagen: "assets/obra-08.jpeg",
       imagenAlt:
         "Mosaico circular con flor de lis roja en el centro, hojas verdes en el anillo y piedra irregular clara alrededor.",
-      descripcion:
-        "Ejemplo — Motivo heráldico reinterpretado en un pavimento de lectura contemporánea.",
+      descripcion: "",
     },
     {
-      id: "obra-2023-02",
-      titulo: "Vórtice",
-      anio: 2023,
+      id: "obra-2018-01",
+      titulo: "Mesa",
+      anio: 2018,
       tecnica: "Mosaico cerámico",
       imagen: "assets/obra-12.jpeg",
       imagenAlt:
         "Mosaico abstracto con rayos rojos y verdes que parten de un centro oscuro sobre campo de teselas claras.",
-      descripcion:
-        "Ejemplo — Composición radial: energía concentrada en el centro y expansión hacia el borde.",
+      descripcion: "",
     },
     {
-      id: "obra-2022-01",
-      titulo: "Serie de estudio II",
-      anio: 2022,
-      tecnica: "Mosaico",
+      id: "obra-2014-02",
+      titulo: "Homenaje",
+      anio: 2014,
+      tecnica: "Mosaico cerámico sobre soporte de disco de arado",
       imagen: "assets/obra-05.jpeg",
       imagenAlt: "Obra de mosaico del archivo — imagen de ejemplo.",
-      descripcion: "Ejemplo — Exploración temprana de patrones y texturas minerales.",
-    },
-    {
-      id: "obra-2022-02",
-      titulo: "Serie de estudio III",
-      anio: 2022,
-      tecnica: "Vidrio fusionado",
-      imagen: "assets/obra-06.jpeg",
-      imagenAlt: "Obra de vidrio del archivo — imagen de ejemplo.",
-      descripcion: "Ejemplo — Ensayo de traslucidez y borde orgánico en el horno.",
-    },
-    {
-      id: "obra-2021-01",
-      titulo: "Primeras piezas",
-      anio: 2021,
-      tecnica: "Técnica mixta",
-      imagen: "assets/obra-10.jpeg",
-      imagenAlt: "Obra temprana del archivo — imagen de ejemplo.",
-      descripcion: "Ejemplo — Registro de búsqueda formal en los primeros años de taller.",
+      descripcion:
+        "En homenaje a mi padre y a todos los que cultivan la tierra chica.",
     },
   ],
 };
@@ -172,7 +205,7 @@ function renderPerfil(artista) {
   foto.alt = artista.fotoAlt;
 
   document.getElementById("footer-credito").textContent =
-    `© ${new Date().getFullYear()} ${artista.nombre} — Portfolio de ejemplo`;
+    `© ${new Date().getFullYear()} ${artista.nombre}`;
 }
 
 function renderObraDestacada(obra) {
@@ -213,24 +246,38 @@ function groupObrasByYear(obras) {
 function renderTimeline(obras) {
   const root = document.getElementById("timeline");
   const grupos = groupObrasByYear(obras);
+  let obraIndex = 0;
 
   root.innerHTML = grupos
     .map(([anio, items], groupIndex) => {
       const obrasHtml = items
         .map((obra, i) => {
+          const lado = obraIndex % 2 === 0 ? "left" : "right";
+          obraIndex += 1;
           const imagenes = [{ src: obra.imagen, alt: obra.imagenAlt }];
           if (obra.detalle) {
             imagenes.push({
               src: obra.detalle,
               alt: obra.detalleAlt,
               esDetalle: true,
+              label: obra.detalleLabel !== undefined ? obra.detalleLabel : "Detalle",
             });
           }
           const mediaHtml = imagenes
             .map(
               (img) => `
             <figure class="timeline-item__media${img.esDetalle ? " timeline-item__media--detalle" : ""}">
-              <div class="timeline-item__frame${obra.vertical && !img.esDetalle ? " timeline-item__frame--vertical" : ""}">
+              <div class="timeline-item__frame${
+                [
+                  !img.esDetalle && obra.vertical
+                    ? "timeline-item__frame--vertical"
+                    : "",
+                  obra.completa ? "timeline-item__frame--completa" : "",
+                ]
+                  .filter(Boolean)
+                  .map((c) => ` ${c}`)
+                  .join("")
+              }">
                 <img
                   src="${escapeHtml(img.src)}"
                   alt="${escapeHtml(img.alt)}"
@@ -240,19 +287,27 @@ function renderTimeline(obras) {
                   decoding="async"
                 />
               </div>
-              ${img.esDetalle ? `<figcaption class="timeline-item__detail-label">Detalle</figcaption>` : ""}
+              ${img.esDetalle && img.label ? `<figcaption class="timeline-item__detail-label">${escapeHtml(img.label)}</figcaption>` : ""}
             </figure>`
             )
             .join("");
 
           return `
-        <article class="timeline-item reveal" role="listitem" style="--delay: ${(groupIndex * 0.05 + i * 0.04).toFixed(2)}s">
+        <article class="timeline-item timeline-item--${lado} reveal" role="listitem" style="--delay: ${(groupIndex * 0.05 + i * 0.04).toFixed(2)}s">
           ${mediaHtml}
           <div class="timeline-item__body">
             <h4 class="timeline-item__title">${escapeHtml(obra.titulo)}</h4>
             ${obra.dimensiones ? `<p class="timeline-item__size">${escapeHtml(obra.dimensiones)}</p>` : ""}
             <p class="timeline-item__technique">${escapeHtml(obra.tecnica)}</p>
-            <p class="timeline-item__desc">${escapeHtml(obra.descripcion)}</p>
+            ${
+              obra.descripcion && obra.descripcion.trim()
+                ? `<div class="timeline-item__desc">${obra.descripcion
+                    .trim()
+                    .split(/\n\s*\n/)
+                    .map((p) => `<p>${escapeHtml(p.trim())}</p>`)
+                    .join("")}</div>`
+                : ""
+            }
           </div>
         </article>`;
         })
@@ -270,6 +325,36 @@ function renderTimeline(obras) {
         </div>`;
     })
     .join("");
+
+  fitTimelineTitles();
+}
+
+function fitTimelineTitles() {
+  const titles = document.querySelectorAll(".timeline-item__title");
+  titles.forEach((title) => {
+    title.style.fontSize = "";
+    const styles = getComputedStyle(title);
+    const maxSize = parseFloat(styles.fontSize);
+    const minSize = 12;
+    let low = minSize;
+    let high = maxSize;
+    let best = minSize;
+
+    title.style.fontSize = `${maxSize}px`;
+    if (title.scrollWidth <= title.clientWidth + 1) return;
+
+    while (high - low > 0.4) {
+      const mid = (low + high) / 2;
+      title.style.fontSize = `${mid}px`;
+      if (title.scrollWidth <= title.clientWidth + 1) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+    title.style.fontSize = `${best}px`;
+  });
 }
 
 /* ============ Navegación y movimiento ============ */
@@ -374,7 +459,20 @@ function init() {
   setupCrystals();
   setupNav();
   /* Observar revelados tras insertar el DOM de la timeline */
-  requestAnimationFrame(setupReveal);
+  requestAnimationFrame(() => {
+    setupReveal();
+    fitTimelineTitles();
+  });
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(fitTimelineTitles, 120);
+  });
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(fitTimelineTitles);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);

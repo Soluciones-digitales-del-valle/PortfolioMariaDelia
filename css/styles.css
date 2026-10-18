@@ -494,20 +494,20 @@ code {
   max-width: calc(50% - 2.25rem);
 }
 
-/* Alternancia izquierda / derecha en escritorio */
-.timeline-year__works > .timeline-item:nth-child(odd) {
+/* Alternancia izquierda / derecha en escritorio (global en la línea) */
+.timeline-item--left {
   margin-right: auto;
   padding-right: 2.25rem;
 }
 
-.timeline-year__works > .timeline-item:nth-child(even) {
+.timeline-item--right {
   margin-left: auto;
   padding-left: 2.25rem;
   text-align: right;
 }
 
-.timeline-year__works > .timeline-item:nth-child(even) .timeline-item__technique,
-.timeline-year__works > .timeline-item:nth-child(even) .timeline-item__desc {
+.timeline-item--right .timeline-item__technique,
+.timeline-item--right .timeline-item__desc {
   margin-left: auto;
 }
 
@@ -553,12 +553,33 @@ code {
   aspect-ratio: 9 / 16;
 }
 
+.timeline-item__frame--completa {
+  background: transparent;
+}
+
+.timeline-item__frame--completa img {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: min(72vh, 40rem);
+  object-fit: contain;
+  object-position: center;
+}
+
 .timeline-item__title {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.45rem;
   font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: #000;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.timeline-item__body {
+  min-width: 0;
+  width: 100%;
 }
 
 .timeline-item__size {
@@ -572,13 +593,21 @@ code {
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent-soft);
+  color: var(--ink);
 }
 
 .timeline-item__desc {
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.98rem;
+}
+
+.timeline-item__desc p {
+  margin: 0 0 0.75rem;
+}
+
+.timeline-item__desc p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Footer ---------- */
@@ -593,7 +622,7 @@ code {
   flex-wrap: wrap;
   gap: var(--space-2);
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .site-footer p {
@@ -602,8 +631,52 @@ code {
   color: var(--ink-soft);
 }
 
-.site-footer__note {
-  max-width: 28rem;
+.site-footer__follow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.55rem;
+}
+
+.site-footer__follow-label {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.site-footer__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-decoration: none;
+  transition: transform 0.25s var(--ease), filter 0.25s var(--ease);
+}
+
+.site-footer__icon svg {
+  width: 2.15rem;
+  height: 2.15rem;
+  display: block;
+}
+
+.site-footer__icon--facebook {
+  color: #1877f2;
+}
+
+.site-footer__icon--instagram {
+  color: #e4405f;
+}
+
+.site-footer__icon:hover,
+.site-footer__icon:focus-visible {
+  transform: translateY(-2px) scale(1.06);
+  filter: brightness(1.08);
 }
 
 /* ---------- Reveal ---------- */
@@ -678,8 +751,8 @@ code {
   }
 
   .timeline-item,
-  .timeline-year__works > .timeline-item:nth-child(odd),
-  .timeline-year__works > .timeline-item:nth-child(even) {
+  .timeline-item--left,
+  .timeline-item--right {
     max-width: none;
     width: 100%;
     margin: 0;
@@ -687,8 +760,8 @@ code {
     text-align: left;
   }
 
-  .timeline-year__works > .timeline-item:nth-child(even) .timeline-item__technique,
-  .timeline-year__works > .timeline-item:nth-child(even) .timeline-item__desc {
+  .timeline-item--right .timeline-item__technique,
+  .timeline-item--right .timeline-item__desc {
     margin-left: 0;
   }
 }
@@ -742,6 +815,11 @@ code {
 
   .site-footer__inner {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__follow {
+    align-items: flex-start;
   }
 }
 
@@ -761,8 +839,24 @@ code {
   z-index: 0;
   pointer-events: none;
   backdrop-filter: blur(5.4px);
-  -webkit-mask-image: radial-gradient(ellipse 62% 48% at 50% 46%, #000 18%, transparent 74%);
-  mask-image: radial-gradient(ellipse 62% 48% at 50% 46%, #000 18%, transparent 74%);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 6%,
+    #000 12%,
+    #000 88%,
+    rgba(0, 0, 0, 0.35) 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 6%,
+    #000 12%,
+    #000 88%,
+    rgba(0, 0, 0, 0.35) 94%,
+    transparent 100%
+  );
 }
 
 .leaf {
